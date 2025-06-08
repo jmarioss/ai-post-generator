@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS posts (
+  id SERIAL PRIMARY KEY,
+  tema TEXT NOT NULL,
+  conteudo TEXT NOT NULL,
+  status VARCHAR(20),
+  data_agendada TIMESTAMP,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
